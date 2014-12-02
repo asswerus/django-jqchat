@@ -5,6 +5,6 @@ setup(
     version='0.1',
     packages=['jqchat'],
     author='Richard Barran',
-    long_description=open('README.rst').read(),
-    url="https://github.com/richardbarran/django-jqchat",
+    long_description=open('README.md').read(),
+    url="https://github.com/asswerus/django-jqchat",
 )
