@@ -32,8 +32,7 @@ like in the following example.
 the settings.py file)
 * Add **jqchat** to the **INSTALLED_APPS** property in your **settings.py** configuration file
 
-```python
-
+```
 INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',
@@ -48,8 +47,7 @@ INSTALLED_APPS = (
 * Execute **python manage.py syncdb**
 * Open the file **demo/urls.py** and add the following:
 
-```python
-
+```
 import jqchat
 ...
 url(r'^chat/', include('jqchat.urls')),
@@ -63,8 +61,7 @@ create a **Room**
 * In the **demo** folder (where you settings.py is) create a folder named **html**
 * In the folder **html** create a file named **base.html** and fill it with the following:
 
-```html
-
+```
 <!DOCTYPE html>
 <html>
    <head>
@@ -77,12 +74,11 @@ create a **Room**
    	{% block body %}{% endblock %}
    </body>
 </html>
-
 ```
 
 * Open your **setting.py** and add the following
 
-```python
+```
 TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'demo'),)
 ```
 
