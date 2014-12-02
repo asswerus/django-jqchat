@@ -101,9 +101,8 @@ class Ajax(object):
                 RoomMember.objects.create_member(user=request.user, room=self.ThisRoom)
             if action == 'room_leave':
                 RoomMember.objects.remove_member(user=request.user, room=self.ThisRoom)
-    
-                if len(msg_text.strip()) > 0: # Ignore empty strings.
-                    Message.objects.create_message(self.request.user, self.ThisRoom, escape(msg_text))
+            if len(msg_text.strip()) > 0: # Ignore empty strings.
+                Message.objects.create_message(self.request.user, self.ThisRoom, escape(msg_text))
         else:
             # If a GET, make sure that no action was specified.
             if self.request.GET.get('action', None):
