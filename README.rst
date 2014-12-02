@@ -32,7 +32,7 @@ like in the following example.
 the settings.py file)
 * Add **jqchat** to the **INSTALLED_APPS** property in your **settings.py** configuration file
 
-```
+.. code:: python
 INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',
@@ -42,7 +42,6 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'jqchat',
 )
-```
 
 * Execute **python manage.py syncdb**
 * Open the file **demo/urls.py** and add the following:
